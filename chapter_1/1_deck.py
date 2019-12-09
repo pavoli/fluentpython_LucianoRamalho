@@ -57,4 +57,4 @@ if __name__ == '__main__':
     # print(Card('Q', 'beasts') in deck)
 
     for card in sorted(deck, key=spades_high):
-        print(card) 
+        print(card)
