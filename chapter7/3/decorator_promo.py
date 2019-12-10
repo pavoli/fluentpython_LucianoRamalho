@@ -57,9 +57,10 @@ def main():
             order_cls.LineItem('watermellon', 5, 5.0)]
     test_order = order_cls.Order(ann, cart, best_promo)
     print(test_order)
-    print(fidelity(test_order))
-    print(bulk_item(test_order))
-    print(large_order(test_order))
+    print('fidelity -> ', fidelity(test_order))
+    print('bulk_item -> ', bulk_item(test_order))
+    print('large_order -> ', large_order(test_order))
+    print('promo ->', [p.__name__ for p in promo])
 
 
 if __name__ == '__main__':
