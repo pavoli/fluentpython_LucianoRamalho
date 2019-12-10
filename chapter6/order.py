@@ -4,7 +4,7 @@ __author__ = 'p.olifer'
 __version__ = '1.0'
 
 from collections import namedtuple
-import chapter_6.promotions as promo_module
+import chapter6.promotions as promo_module
 import inspect
 
 Customer = namedtuple('Customer', 'name fidelity')

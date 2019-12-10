@@ -2,4 +2,4 @@
 __author__ = 'p.olifer'
 
 
-import chapter_7.run_registry as run_reg
+import chapter7.run_registry as run_reg
