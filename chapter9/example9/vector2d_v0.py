@@ -36,3 +36,7 @@ class Vector2d:
 
     def __bool__(self):
         return bool(abs(self))
+
+    def __format__(self, format_spec=''):
+        components = (format(c, format_spec) for c in self)
+        return '({}, {})'.format(*components)
