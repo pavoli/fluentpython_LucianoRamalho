@@ -7,6 +7,7 @@ from array import array
 import math
 
 class Vector2d:
+    __slots__ = ('__x', '__y')
 
     typecode = 'd'
 
@@ -78,4 +79,7 @@ if __name__ == '__main__':
     # print(hash(v2))
     # print(set([v1, v2]))
     # print(len(set([v1, v2])))
-    print(v1.__dict__)
+    # print(v1.__dict__)
+    v1_clone = Vector2d.frombytes(bytes(v1))
+    print(v1_clone)
+    print(v1 == v1_clone)
