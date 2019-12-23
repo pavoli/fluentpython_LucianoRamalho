@@ -5,7 +5,7 @@ __version__ = '1.0'
 
 import  abc
 
-class Tonbola(abc.ABC):
+class Tombola(abc.ABC):
 
     @abc.abstractmethod
     def load(self, iterable):
@@ -38,7 +38,7 @@ class Tonbola(abc.ABC):
         self.load(items)
         return tuple(sorted(items))
 
-class Fake(Tonbola):
+class Fake(Tombola):
     def pick(self):
         return 13
 
