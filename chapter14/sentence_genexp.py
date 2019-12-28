@@ -22,4 +22,9 @@ class Sentence:
 
 
 if __name__ == '__main__':
-    pass
+    print(all([]))
+    print(all({}))
+    print(all(set()))
+    print(any([]))
+    print(any({}))
+    print(any(set('1')))
